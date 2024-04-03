@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--------home------->
+
+    <div id="main">
+        <div class="contain" id="contain">
+            <nav>
+                <img src="./images/logo.jpg" class="logo" height="100px" class="img">
+                <ul id="sidemenu">
+                    <li class="active1"><a href="#main">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a class="animation" href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills1">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img id="cross" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARNJREFUSEvtlVEOgjAQRHcx8APcAW8CJ1FO4lHQk+BN9A6UkGBSTAk1BEu3FCJ+lN/CPGa60yLs9OBOXHDgnyXvov6fqJumSQ6cX5Dzmx/Hd92fvaoq7TyvCMLwSDkg9/jFWAmIaQfwRM7zObiAgueVAijepeAkuGXsjIiFFFTBx9DeKecZlQ4JFjo6uA1UaBqB5+C9uyFeU6dy743BSjhA8hkig3jHA7cIPIXbQhdFLSHTPaWmfa5Wixx/DdKgagM3Bqumt0NMqKqtcqyrjEnPVXDSsUlPbeAkuK3rB8raaCozgV+DMMx15zUJHi6JUndOS0APBzj5UZStviQoAdt10rGtMPWdA1MJbbbuot4sSkroDauBsh859dNEAAAAAElFTkSuQmCC" onclick="closemenu()">
+                </ul>
+                <img id="cross1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAHRJREFUSEtjZBggwDhA9jKMWky3kB8NanBQ//76tYGaYc7KzY1hHtag/v31638qW4xhz+CymJq+xWXWaKqGpOrPnx2oGdysvLwH0M0bXIlr4LLTQAU1NeN3NDvBQmA0VQ9stTiaqmkRAqPVIi1CFauZAxbUAGImKB+iiOksAAAAAElFTkSuQmCC" onclick="openmenu()">
+            </nav>
+        </div>
+        <div class="photo">
+            <img src="./images/photo2.new.jpg" height="500px" width="500px">
+         </div>
+        <div class="content">
+            <p>Fullstack Web Developer</p>
+            <h1>Hi, I am <span>Tarang Patni</span><br> from Pune</h1>
+        </div>
+    </div>
+    
+
+    <!-------about------->
+
+
+    <div id="about">
+        <div class="contain">
+            <div class="row">
+                <div class="col1">
+                    <img src="./images/photo6.jpg" height="600px" width="500px">
+                </div>
+                <div class="col2">
+                    <h1 class="heading">About Me</h1>
+                    <p class="p1">Hi, my name is Tarang Patni.<br>I am persuing my BTech degree from MIT ADT UNIVERSITY.<br>I have done courses in languages like Java Script,HTML,C,Python etc.<br>I have done training in Fullstack Web Development for about 6 months<br></p>
+                    <div class="tab-title">
+                        <p class="tab active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab" onclick="opentab('education')">Education</p>
+                        <p class="tab" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing interactive web pages</li>
+                            <li><span>Web Designing</span><br>Designing web pages</li>
+                            <li><span>Coding</span><br>HTML,CSS,JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021-current</span><br>MIT ADT UNIVERSITY</li>
+                            <li><span>2019-2021</span><br>College from ASM Pune</li>
+                            <li><span>Before 2019</span><br>School from BPS Pune</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="hobbies">
+                        <ul>
+                            <li><span>Sketching</span><br>Drawing and Painting</li>
+                            <li><span>Dancing</span><br>Hip-Hop</li>
+                            <li><span>PLaying</span><br>Cricket,Football,Table Tennis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------portfolio------>
+
+    <div class="portfolio" id="portfolio">
+        <p id="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, atque. Asperiores fuga dicta numquam eos quasi veritatis, suscipit eius quidem ad! Repellat, tenetur culpa. Tenetur dicta ratione consequatur facere vitae.</p>
+        <p id="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur aspernatur obcaecati laborum ad magni suscipit dicta harum quo ipsum nobis nulla repellat minima, tempora doloribus animi, tenetur id deserunt?</p>
+        <div class="d1">
+          <h1 class="heading">Latest <span>Project</span></h1>
+
+          <div class="portfolio-container">
+            <div class="portfolio-box" id="one">
+                <img src="./images/portfolio1.jpg" alt="" height="500px" width="500px">
+                <div class="portfolio-layer">
+                    <h4>Online Voting System</h4>
+                    <p>In it you can vote for the person you like if you fulfill the criteria required for voting</p>
+                </div>
+            </div>
+            <div class="portfolio-box" id="two">
+                <img src="./images/portfolio2.jpg" alt="" height="500px" width="500px">
+                <div class="portfolio-layer">
+                    <h4>Weather Report</h4>
+                    <p>See the forecast of a particular place before planning a trip and paln it accordingly</p>
+                </div>
+            </div>
+            <div class="portfolio-box" id="three">
+                <img src="./images/portfolio3.jpg" alt="" height="500px" width="500px">
+                <div class="portfolio-layer">
+                    <h4>Expense Tracker</h4>
+                    <p>Track your expenses for the month and also see your monthly savings</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <!-------skills------>
+
+    <div class="skills" id="skills1">
+        <h1 class="heading">My <span>Skills</span></h1>
+
+        <div class="skills-row">
+            <div class="skills-column" id="column2">
+                <h3 class="title">Coding Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column" id="column1">
+                <h3 class="title">Professional Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Development <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Business Logic <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------contact------->
+
+    <div class="contact" id="contact">
+        <div class="contain1">
+            <div class="row">
+                <div class="left">
+                    <h1>Contact Me</h1>
+                    <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXNJREFUSEvNltFRw0AMRJVOoBOohFBJQiVAJUkn0AnkDSdGEdLpbCc4+vFkrHhXu5LuNrJSbFbClZsDvhORz2uq4SsG8KMBHkXk+VoEPPCDiBxcpRB4ERGeF4vIYyqmch8XJRABv57k3TbUt1OlqGCJQOC9KTC7DyJgQAEn7pvH/PYEAFULJhOIgK3PNBdVa0BqF1hBHkoME8jmWH0GlI/6yAiQjwolgQzY+vzY6WjUIdc3Y0kgA7Y+U23V0RDAAp420l2QAUfzvJTA2S7o7epsnkcJPAWT8NusPeCvzpqqpMdzpNd9oJ8qge3O9p711mfP6yGp942xglYVZoB0t265MwEzqRWYedTlECmPlOqlfT97nNTff10g1l98ofpqZfq8Tl/+vIqktv7qIeE9/9OlJZJL6AHjL03lR0JPJXt4TMUNK87mt+rsSeC9O9foKE0C1OQImDsXDZbO4CykAY9ZBvhYnqlLCNzchX5JMUP/Xa3ibxOVaR/45DsZAAAAAElFTkSuQmCC"/>Email :- tarangpatni264@gmail.com</p>
+                    <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZ1JREFUSEvlluFNxDAMhXObwCTAJMAkwCTAJMAksAn0Q3mndz4n7UVB9wNLVdqozRfbz0535Uy2OxO3bAE/llLe6zVtn2vgtwV4XUr5KqW8LlQ2McV6YEEFmgpvgR0K8KLSp8Ez8PMS2rsKIrc39Zl5bAo8A38HqELNZhz+tETiZTThEYyQCDOGp3jsFuGXs8Dk8rMudp945LnHW94Zsuixgwmll0+W+yEoH2U5llcSlhZX7hHXcIi1WAbGy4eqXgd4M/kTsAvM89yaHwp35jF5Jp9qlfIuzqN6wj5krc7lZeNlFcspg2vT3d7eAru6o5ikgayLxVbbhPcOCQd4zbIpPEeAMoVcPd3nU/jasei1G+ta8AijDIF1e/samEUJH2N2ODCPCK/qCFTdLOrhwPM1MCHzfPMcPe+pOsLZ1G//3wIWXJ5LVPtFVurJBbfvC1vBgmei6pWNQw9a8ClgOeZqd/WiAa6POqJ68o/Fvr851DGaKqlb+y1qRfwIekqOW4u6qnXv7zaFOBLqnpZU04zx7+Xgu9ngzQfG/wP/ANkGch+IB6/eAAAAAElFTkSuQmCC"/>7776842244</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/tarang.patni.5?mibextid=ZbWKwL"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZBJREFUSEvFlstRxDAMQLWdQCVAJ2wlQCVAJdAJ2wnMy8QZRZEl2QeiS3YT209/6yInyeUkrsyA70TkUUR43lbFeX6PGFEFA3kWkZfg8Ab/rCiRgStAq0tT4E155KBvBAb6tbp0xIttLQo89eA9MNCfGZrZA/zqub4HxlISKBMOJqYIv1H4wex1LffA72siZdCP1Rq7jiTkDC2HtRaMlVibCaVD/DzxwAeXW3DVWuKGFVpwc6txr+x2ylowCcXmTO5NtlZyAqvZt4gGV91s9/H/N9N0/U54lg6nwV5seudZT1XBW4j+G0w3e7UW86LXi3fxSdwaJahrcRTjEXCUoFtSaldHbXIEHMV749kk6ZUFYOLTxNYwidnEdi0dmS642kBmsnrXNu0B1VtpBrxrOt4lUannUfBWRl7nau+wGpdH1+II2E3MaBCIpo8qeHgQwHosp6HojO15yiuh6OpMx9vesJdZ3BsSttLKpkwddyxvY40HbmPQ0oszqYL1OXqQ14q14T5jLt9nwKWDs0Wngf8AqXJcH3pki+8AAAAASUVORK5CYII="/></a>
+                        <a href="https://www.instagram.com/i_am_tarang1117?igsh=OWozeTVpOTMwN3Ju"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcBJREFUSEvllk1OxDAMhT03gZMABwEBFwFOws9F+NmyZQ+cBPqN/JBJnTZtFhUi0qgznfg9+9lxvLON1m4jXvsTxAdmxmduPc1t4P+5iK/N7MjMjlvAfM+HP++HJ/bpqhFDdBsiFJieU35EJ9l/YmYjuxrxu5Mi280QcZN87o3SgeM4Aelh6WlGjMG5k+Ht0nXqKXxx1SC/M7OLCJQRK1q8bJE24kH64C8gwv4xizoj/nLDWhqQEkUoOoA/PSK+nw2yUlSsSyclkJHcJTigbCSnmcxU6VWiPcCqYpwC983MXh0PXPB+aqUkJh9IkxFHUgpOaSByyFi8L48QeOCuIpYSgP8CcEI5jDPkNp6CLmJFO6rOILtOQxl1F7FAiQbybNXS1EWcGhfs5BkHS1W6iDeTOhZXJrdkzoqvK2IAJSXfkfM59Gad7ew4qRNOHqepBqKOlTWQ2hnmfdqCa50rvVFChEhL48AZIkeBWl9PW3DWj1squPXGUnpmezWAquBav24lZZ+CaLoWkQ8DnmsGAQixXTwIyFDk/O4ZfcrevVdsatiL9+6SYU+Orhr2yjy2jrbYNc1nc+PtkkJatPf/EX8DIXGOHzTONr8AAAAASUVORK5CYII="/></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <br>Developed by :- Tarang Patni</p>
+        </div>
+    </div>
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby7YB7Su0TKl3ttwR5AgL2gcOf9LLsLakwmWt66AqQTfqve8iNQ3bGD7srOYaZ3cnRw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = " "
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+
+        var slidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="30px";
+        }
+        function closemenu(){
+            sidemenu.style.right="-300px"
+        }
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+            $(".animation").click(function()
+            {
+            
+               $(".portfolio-box").animate("load");
+            })
+        })    
+      </script>
+</body>
+</html>
