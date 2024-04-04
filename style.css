@@ -652,6 +652,9 @@ nav #cross1{
     .content{
         margin-left: 150px;
     }
+    .portfolio-box{
+        width: 300px;
+    }
 }
 @media only screen and (min-width: 1020px){
     .content span::before{
@@ -756,6 +759,9 @@ nav #cross1{
     }
     .portfolio-box img{
         height: 800px;
+        width: 800px;
+    }
+    .portfolio-box{
         width: 800px;
     }
     .portfolio-layer p{
